@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
 }
 
+/* сделал контейнер гридом */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
