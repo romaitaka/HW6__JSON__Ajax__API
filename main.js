@@ -1,5 +1,5 @@
 const requestUrl = 'https://reqres.in/api/users?page=2';
-const postWrapper = document.getElementById('post-wrapper');
+const list = document.getElementById('list-wrapper');
 
 const createTemplate = data => {
     return `
@@ -23,7 +23,7 @@ const getList = url => {
         })
         .then(json => {
             json.data.forEach(item => {
-                postWrapper.innerHTML += createTemplate(item);
+                list.innerHTML += createTemplate(item);
             });
         })
         .catch(error => {
